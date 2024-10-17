@@ -1,1 +1,1 @@
-# [AlexeyNewDeveloper.github.io](https://AlexeyNewDeveloper.github.io "Перейти на сайт") 
+# <a href="https://AlexeyNewDeveloper.github.io" title="Перейти на сайт" target="_blank">AlexeyNewDeveloper.github.io</a>
