@@ -2,15 +2,36 @@
 layout: default
 ---
 
-<a href="/#{{page.title}}">&larr; Назад</a>
-<li class="projects__project-container {{page.extraClass}}">
-  <div class="projects__background">
-    <div class="projects__content projects__content_position_{{page.position}}">
+<section class="projects__block_default">
+  <a href="/#{{page.title}}" class="projects__back-link">&larr; Назад</a>
+  <div class="projects__content">
+    <hgroup>
       <h2 class="projects__header">{{page.title}}</h2>
-      <p class="projects__description">{{page.excerpt}}</p>
-      <a href="{{page.url}}" class="projects__more-detailed-link"
-        >Подробнее &rarr;</a
+      <p class="projects__subheader">{{page.excerpt | strip_html}}</p>
+    </hgroup>
+
+    <div class="projects__grid-content">
+      <div class="projects__description">
+        {{page.content | remove: page.excerpt }}
+      </div>
+
+      <div class="projects__detailed-image-container">
+        <div class="projects__square-pic rotation"></div>
+        <img
+          alt="Картинка {{page.title}}"
+          src="{{site.url}}/assets/images{{page.image-link}}"
+          class="projects__detailed-image"
+        />
+      </div>
+    </div>
+
+    <div class="projects__more-detailed-link-container">
+      <a href="{{page.link-to-site}}" class="projects__more-detailed-link"
+        >Посмотреть сайт &rarr;</a
+      >
+      <a href="{{page.link-to-repo}}" class="projects__more-detailed-link"
+        >Репозиторий &rarr;</a
       >
     </div>
   </div>
-</li>
+</section>

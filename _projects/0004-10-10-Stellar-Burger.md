@@ -1,5 +1,8 @@
 ---
 position: right
+image-link: /background/projects-sections/stellar-burger/stellar-burger.png
+link-to-site: https://alexeynewdeveloper.github.io/stellar-burgers/
+link-to-repo: https://github.com/AlexeyNewDeveloper/stellar-burgers
 ---
 
 Давно выяснено, что при оценке дизайна и композиции читаемый текст

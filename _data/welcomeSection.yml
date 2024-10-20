@@ -4,27 +4,40 @@ subHeader: Fullstack-разработчик
 techStack:
   - name: HTML
     img: ./assets/images/icons/technologies/html-5-svgrepo-com.svg
+    link: https://developer.mozilla.org/ru/docs/Web/HTML
   - name: CSS
     img: ./assets/images/icons/technologies/css-3-svgrepo-com.svg
+    link: https://developer.mozilla.org/en-US/docs/Web/CSS
   - name: JavaScript
     img: ./assets/images/icons/technologies/javascript-svgrepo-com.svg
+    link: https://developer.mozilla.org/en-US/docs/Web/JavaScript
   - name: TypeScript
     img: ./assets/images/icons/technologies/typescript-svgrepo-com.svg
+    link: https://www.typescriptlang.org/
   - name: Node JS
     img: ./assets/images/icons/technologies/node-js-svgrepo-com.svg
+    link: https://nodejs.org/
   - name: React
     img: ./assets/images/icons/technologies/react-svgrepo-com.svg
+    link: https://react.dev/
   - name: Redux
     img: ./assets/images/icons/technologies/redux-svgrepo-com.svg
+    link: https://redux.js.org/
   - name: Express
     img: ./assets/images/icons/technologies/express.svg
+    link: https://expressjs.com/ru/
   - name: Mongo
     img: ./assets/images/icons/technologies/mongo-svgrepo-com.svg
+    link: https://www.mongodb.com/en-us
   - name: PostgreSQL
     img: ./assets/images/icons/technologies/postgresql-svgrepo-com.svg
+    link: https://www.postgresql.org/
   - name: NestJS
     img: ./assets/images/icons/technologies/nest-middleware-js-svgrepo-com.svg
+    link: https://nestjs.com/
   - name: Git
     img: ./assets/images/icons/technologies/git-svgrepo-com.svg
+    link: https://git-scm.com/
   - name: SQLite
     img: ./assets/images/icons/technologies/sqlite-svgrepo-com.svg
+    link: https://www.sqlite.org/

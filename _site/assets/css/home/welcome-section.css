@@ -64,3 +64,14 @@
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 620px) {
+  .welcome__list-of-techs {
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}

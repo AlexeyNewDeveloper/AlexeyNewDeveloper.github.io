@@ -18,9 +18,9 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="https://alexeynewdeveloper.github.io/assets/images/icons/logo/logo.svg"
+      href="http://localhost:4000/assets/images/icons/logo/logo.svg"
     />
-    <link rel="stylesheet" href="https://alexeynewdeveloper.github.io/assets/css/main.css" />
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css" />
     <title>Stellar Burger</title>
   </head>
   <body>
@@ -28,7 +28,7 @@
   <div class="header__logo-container">
     <a href="/">
       <img
-        src="https://alexeynewdeveloper.github.io/assets/images/icons/logo/logo.svg"
+        src="http://localhost:4000/assets/images/icons/logo/logo.svg"
         alt="Logo"
         class="header__logo"
     /></a>
@@ -36,13 +36,21 @@
   <nav class="header__navigation">
     <ul class="header__items">
       
-      <li class="header__item"><a href="/">Главная</a></li>
+      <li class="header__item">
+        <a href="/" class="header__item-link">Главная</a>
+      </li>
       
-      <li class="header__item"><a href="/projects">Проекты</a></li>
+      <li class="header__item">
+        <a href="/projects" class="header__item-link">Проекты</a>
+      </li>
       
-      <li class="header__item"><a href="/about">Обо мне</a></li>
+      <li class="header__item">
+        <a href="/about" class="header__item-link">Обо мне</a>
+      </li>
       
-      <li class="header__item"><a href="/contact">Контакты</a></li>
+      <li class="header__item">
+        <a href="/contact" class="header__item-link">Контакты</a>
+      </li>
       
     </ul>
   </nav>
@@ -81,12 +89,12 @@
     </nav>
   </div>
 </header>
- <a href="/#Stellar Burger">&larr; Назад</a>
-<li class="projects__project-container ">
-  <div class="projects__background">
-    <div class="projects__content projects__content_position_right">
+ <section class="projects__block_default">
+  <a href="/#Stellar Burger" class="projects__back-link">&larr; Назад</a>
+  <div class="projects__content">
+    <hgroup>
       <h2 class="projects__header">Stellar Burger</h2>
-      <p class="projects__description"><p>Давно выяснено, что при оценке дизайна и композиции читаемый текст
+      <p class="projects__subheader">Давно выяснено, что при оценке дизайна и композиции читаемый текст
 мешает сосредоточиться. Lorem Ipsum используют потому, что тот
 обеспечивает более или менее стандартное заполнение шаблона, а
 также реальное распределение букв и пробелов в абзацах, которое не
@@ -94,14 +102,35 @@
 текст.. Здесь ваш текст..” Многие программы электронной вёрстки и
 редакторы HTML используют Lorem Ipsum в качестве текста по
 умолчанию, так что поиск по ключевым словам “lorem ipsum” сразу
-показывает</p>
+показывает
 </p>
-      <a href="/projects/0004-10-10-Stellar-Burger.html" class="projects__more-detailed-link"
-        >Подробнее &rarr;</a
+    </hgroup>
+
+    <div class="projects__grid-content">
+      <div class="projects__description">
+        
+      </div>
+
+      <div class="projects__detailed-image-container">
+        <div class="projects__square-pic rotation"></div>
+        <img
+          alt="Картинка Stellar Burger"
+          src="http://localhost:4000/assets/images/background/projects-sections/stellar-burger/stellar-burger.png"
+          class="projects__detailed-image"
+        />
+      </div>
+    </div>
+
+    <div class="projects__more-detailed-link-container">
+      <a href="https://alexeynewdeveloper.github.io/stellar-burgers/" class="projects__more-detailed-link"
+        >Посмотреть сайт &rarr;</a
+      >
+      <a href="https://github.com/AlexeyNewDeveloper/stellar-burgers" class="projects__more-detailed-link"
+        >Репозиторий &rarr;</a
       >
     </div>
   </div>
-</li>
+</section>
 </div>
   </body>
 </html>
