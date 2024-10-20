@@ -1,0 +1,39 @@
+<header class="header">
+  <div class="header__logo-container">
+    <a href="/">
+      <img
+        src="{{site.url}}/assets/images/icons/logo/logo.svg"
+        alt="Logo"
+        class="header__logo"
+    /></a>
+  </div>
+  <nav class="header__navigation">
+    <ul class="header__items">
+      {% for item in site.data.navigation %}
+      <li class="header__item"><a href="{{item.link}}">{{item.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="hamburger">
+    <input
+      id="hamburger__menu-toggle"
+      class="hamburger__menu-toggle"
+      type="checkbox"
+    />
+    <label
+      class="hamburger__menu-button-container"
+      for="hamburger__menu-toggle"
+    >
+      <div class="hamburger__menu-button"></div>
+    </label>
+    <nav class="hamburger__navigation">
+      <ul class="hamburger__items">
+        {% for item in site.data.navigation %}
+        <li class="hamburger__item">
+          <a href="{{item.link}}">{{item.name}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

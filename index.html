@@ -1,11 +1,42 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Портфолио | AlexeyNewDeveloper</title>
-  </head>
-  <body>
-    <h1>Test</h1>
-    <script src="./js/index.js"></script>
-  </body>
-</html>
+---
+title: Главная | AlexeyNewDeveloper
+---
+
+<div class="content">
+  <div class="content__welcome welcome">
+    <h1 class="welcome__header">{{site.data.welcomeSection.name}}</h1>
+    <div class="welcome__description">
+      <p class="welcome__sub-header">{{site.data.welcomeSection.subHeader}}</p>
+      {% include welcome-tech-stack.html %}
+    </div>
+  </div>
+  <div class="content__projects projects">
+    <ul class="projects__list">
+      {% for project in site.projects %}
+      <li
+        class="projects__project-container projects__content-direction_{{project.position}}"
+      >
+        <a name="{{project.title}}"></a>
+        <!-- <div class="projects__imageContainer"> -->
+        <img
+          alt="text"
+          src="./assets/images/background/projects-sections/to-learn-to-learn/two_again.png"
+          class="projects__image"
+        />
+        <!-- </div> -->
+        <div
+          class="projects__content projects__content_position_{{project.position}}"
+        >
+          <h2 class="projects__header">{{project.title}}</h2>
+          <p class="projects__description">
+            {{project.excerpt | strip_html | truncatewords: 50}}
+          </p>
+          <a href="{{project.url}}" class="projects__more-detailed-link"
+            >Подробнее &rarr;</a
+          >
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

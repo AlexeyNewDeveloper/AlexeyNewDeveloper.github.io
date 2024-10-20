@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<a href="/#{{page.title}}">&larr; Назад</a>
+<li class="projects__project-container {{page.extraClass}}">
+  <div class="projects__background">
+    <div class="projects__content projects__content_position_{{page.position}}">
+      <h2 class="projects__header">{{page.title}}</h2>
+      <p class="projects__description">{{page.excerpt}}</p>
+      <a href="{{page.url}}" class="projects__more-detailed-link"
+        >Подробнее &rarr;</a
+      >
+    </div>
+  </div>
+</li>

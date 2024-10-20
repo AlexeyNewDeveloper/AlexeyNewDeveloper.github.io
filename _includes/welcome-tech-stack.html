@@ -1,0 +1,15 @@
+<ul class="welcome__list-of-techs">
+  {% for tech in site.data.welcomeSection.techStack %}
+
+  <li class="welcome__tech">
+    <div class="welcome__tech-icon-wrap">
+      <img
+        src="{{tech.img}}"
+        alt="{{tech.name}} icon"
+        class="welcome__tech-icon"
+      />
+    </div>
+    <p class="welcome__tech-description">{{tech.name}}</p>
+  </li>
+  {% endfor %}
+</ul>

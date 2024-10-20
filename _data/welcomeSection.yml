@@ -1,0 +1,30 @@
+name: Алексей Янчев
+subHeader: Fullstack-разработчик
+
+techStack:
+  - name: HTML
+    img: ./assets/images/icons/technologies/html-5-svgrepo-com.svg
+  - name: CSS
+    img: ./assets/images/icons/technologies/css-3-svgrepo-com.svg
+  - name: JavaScript
+    img: ./assets/images/icons/technologies/javascript-svgrepo-com.svg
+  - name: TypeScript
+    img: ./assets/images/icons/technologies/typescript-svgrepo-com.svg
+  - name: Node JS
+    img: ./assets/images/icons/technologies/node-js-svgrepo-com.svg
+  - name: React
+    img: ./assets/images/icons/technologies/react-svgrepo-com.svg
+  - name: Redux
+    img: ./assets/images/icons/technologies/redux-svgrepo-com.svg
+  - name: Express
+    img: ./assets/images/icons/technologies/express.svg
+  - name: Mongo
+    img: ./assets/images/icons/technologies/mongo-svgrepo-com.svg
+  - name: PostgreSQL
+    img: ./assets/images/icons/technologies/postgresql-svgrepo-com.svg
+  - name: NestJS
+    img: ./assets/images/icons/technologies/nest-middleware-js-svgrepo-com.svg
+  - name: Git
+    img: ./assets/images/icons/technologies/git-svgrepo-com.svg
+  - name: SQLite
+    img: ./assets/images/icons/technologies/sqlite-svgrepo-com.svg
