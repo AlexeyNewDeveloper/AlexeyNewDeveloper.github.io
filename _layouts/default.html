@@ -24,6 +24,8 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <div class="wrap">{% include navigation.html %} {{ content }}</div>
+    <div class="wrap">
+      {% include navigation.html %} {{ content }} {% include footer.html %}
+    </div>
   </body>
 </html>

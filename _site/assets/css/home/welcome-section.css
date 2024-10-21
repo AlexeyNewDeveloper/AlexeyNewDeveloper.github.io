@@ -66,6 +66,10 @@
 }
 
 @media screen and (max-width: 620px) {
+  .content__welcome {
+    height: auto;
+  }
+
   .welcome__list-of-techs {
     margin: 20px auto 0;
     display: flex;

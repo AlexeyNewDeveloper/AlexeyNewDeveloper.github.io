@@ -2,10 +2,12 @@
 @import url('./home/welcome-section.css');
 @import url('./home/projects-section.css');
 @import url('./animations/animations.css');
+@import url('./footer/footer.css');
 
 :root {
   --header-height: 100px;
   --main-block-height: calc(100vh - var(--header-height));
+  --project-block-background-color: rgba(58, 57, 57, 0.595);
 }
 
 html {
@@ -131,6 +133,14 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .wrap {
+    padding: 0 10px;
+  }
+
+  .header {
+    padding: 0;
+  }
+
   .header__items {
     display: none;
   }

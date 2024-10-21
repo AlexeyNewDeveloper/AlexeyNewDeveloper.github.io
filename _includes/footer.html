@@ -1,0 +1,25 @@
+<footer class="footer">
+  <div class="footer__container">
+    <a
+      href="https://github.com/AlexeyNewDeveloper"
+      class="footer__developer-link"
+      >Алексей Янчев</a
+    >
+    <p class="footer__info">
+      Сайт разработан с помощью
+      <a class="footer__helper-tech" href="https://jekyllrb.com/">Jekyll</a>
+    </p>
+    <ul class="footer__social-links">
+      {% for social in site.data.socialLinks %}
+      <li class="footer__social-link">
+        <a href="{{social.link}}"
+          ><img
+            alt="{{social.name}}"
+            src="{{site.url}}/assets/images{{social.image}}"
+            class="footer__social-image"
+        /></a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</footer>

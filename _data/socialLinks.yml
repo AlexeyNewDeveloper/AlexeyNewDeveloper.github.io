@@ -1,0 +1,6 @@
+- name: GitHub
+  link: https://github.com/AlexeyNewDeveloper
+  image: /icons/footer/github.svg
+- name: Telegram
+  link: https://t.me/hello_my_name1
+  image: /icons/footer/telegram.svg

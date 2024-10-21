@@ -13,27 +13,25 @@ title: Главная | AlexeyNewDeveloper
   <div class="content__projects projects">
     <ul class="projects__list">
       {% for project in site.projects %}
-      <li
-        class="projects__block_default projects__project-container projects__content-direction_{{project.position}}"
-      >
+      <li class="projects__block_default">
         <a name="{{project.title}}" class="projects__anchor"></a>
-        <!-- <div class="projects__imageContainer"> -->
-        <img
-          alt="text"
-          src="{{site.url}}/assets/images{{project.image-link}}"
-          class="projects__image"
-        />
-        <!-- </div> -->
         <div
-          class="projects__content projects__content_position_{{project.position}}"
+          class="projects__content projects__project-container projects__content-direction_{{project.position}}"
         >
-          <h2 class="projects__header">{{project.title}}</h2>
-          <div class="projects__description">
-            {{project.excerpt | truncatewords: 50}}
+          <img
+            alt="text"
+            src="{{site.url}}/assets/images{{project.image-link}}"
+            class="projects__image"
+          />
+          <div class="projects__content_position_{{project.position}}">
+            <h2 class="projects__header">{{project.title}}</h2>
+            <div class="projects__description">
+              {{project.excerpt | truncatewords: 50}}
+            </div>
+            <a href="{{project.url}}" class="projects__more-detailed-link"
+              >Подробнее &rarr;</a
+            >
           </div>
-          <a href="{{project.url}}" class="projects__more-detailed-link"
-            >Подробнее &rarr;</a
-          >
         </div>
       </li>
       {% endfor %}
