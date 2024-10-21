@@ -14,14 +14,15 @@ layout: default
       <div class="projects__description">
         {{page.content | remove: page.excerpt }}
       </div>
-
-      <div class="projects__detailed-image-container">
-        <div class="projects__square-pic rotation"></div>
-        <img
-          alt="Картинка {{page.title}}"
-          src="{{site.url}}/assets/images{{page.image-link}}"
-          class="projects__detailed-image"
-        />
+      <div>
+        <div class="projects__detailed-image-container">
+          <div class="projects__square-pic rotation"></div>
+          <img
+            alt="Картинка {{page.title}}"
+            src="{{site.url}}/assets/images{{page.image-link}}"
+            class="projects__detailed-image"
+          />
+        </div>
       </div>
     </div>
 

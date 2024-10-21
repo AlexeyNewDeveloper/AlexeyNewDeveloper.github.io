@@ -8,6 +8,9 @@ techStack:
   - name: CSS
     img: ./assets/images/icons/technologies/css-3-svgrepo-com.svg
     link: https://developer.mozilla.org/en-US/docs/Web/CSS
+  - name: Jekyll
+    img: ./assets/images/icons/technologies/jekyll.svg
+    link: https://jekyllrb.com/
   - name: JavaScript
     img: ./assets/images/icons/technologies/javascript-svgrepo-com.svg
     link: https://developer.mozilla.org/en-US/docs/Web/JavaScript
